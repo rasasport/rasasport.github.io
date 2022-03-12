@@ -10,7 +10,6 @@
 	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="https://bootswatch.com/spacelab/bootstrap.css" rel="stylesheet" type="text/css">
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WERD8ZJHV"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -44,13 +43,13 @@
                <ul class="nav navbar-nav navbar-left">
                   <li><a href="https://vk.com/MineBars" target="_blank">Мы ВКонтакте</a>
                   </li>
-                  <li><a href="#" target="_self">Правила</a>
+                  <li><a href="rules.html" target="_self">Правила</a>
                   </li>
-                  <li><a href="#" data-toggle="modal" data-target="#basicModal">Контакты</a>
+                  <li><a href="rules.html#" data-toggle="modal" data-target="#basicModal">Контакты</a>
                   </li>
-                  <li><a href="https://minebars.ru/info" target="_self">Инфо о донате</a>
+                  <li><a href="info.html" target="_self">Инфо о донате</a>
                   </li>
-                  <li><a href="https://minebars.ru/how" target="_self">Как купить?</a>
+                  <li><a href="how.html" target="_self">Как купить?</a>
                   </li>
 	              <li><a href="https://vk.me/MineBars">Тех.поддержка</a></li>
 				  </li>
@@ -60,15 +59,15 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-			<li><a href="https://minebars.ru/guard">Безопасность</a></li>
-			<li><a href="https://minebars.ru/faq">FAQ</a></li>
+			<li><a href="guard.html">Безопасность</a></li>
+			<li><a href="faq.html">FAQ</a></li>
 			<li><a></a></li>
             <li class="divider"></li>
-            <li><a href="https://minebars.ru/console">Консоль</a></li>
+            <li><a href="console.html">Консоль</a></li>
           </ul>
         </li>
                <ul class="nav navbar-nav navbar-right">
-                  <a href="https://minebars.ru/index" class="btn btn-warning navbar-btn navbar-right hidden-sm hidden-xs" onclick="prompt('Скопируйте наш IP адрес и вставьте в ваш клиент:','MBars.ru')">
+                  <a href="index.html" class="btn btn-warning navbar-btn navbar-right hidden-sm hidden-xs" onclick="prompt('Скопируйте наш IP адрес и вставьте в ваш клиент:','MBars.ru')">
                   IP: MBars.ru
                   </a>
                </ul>
@@ -237,7 +236,6 @@
                             <p style="color:black;">7.3 Администрация имеет полное право на отказ в предоставление услуг по причинам: неадекватность, требование несуществующих услуг, наглеж, оскорбления, и т.д. <b><span>[Не причина для наказания]</span></b></p>
                             <p style="color:black;">7.4 Предоставьте чек оплаты, если хотите написать Администрации о пропаже, непоявлении доната после покупки. Без данного подтверждения администрация вправе отказать Вам в предоставлении купленной услуги. <b><span>[Не причина для наказания]</span></b></p>
                         </div>
-
                     </div>
                 </div>
                 <div class="panel panel-default">
@@ -253,7 +251,7 @@
                     </div>
                 </div>
                 <legend></legend>
-				<span class="badge" style="background-color:#c0392b">Внимание!</span> <span style="color:black;">- За нарушение данных правил администрация/хелпера может выдать предупреждение, бан временный или перманентный!<br>
+				<span class="badge" style="background-color:#c0392b">Внимание!</span> <span style="color:black;">- За нарушение данных правил администрация может выдать предупреждение, бан временный или перманентный!<br>
 				<p></p>
 				<legend></legend>
                 <p>Если Вы заметили, что кто-то нарушает данный список правил, сразу же подавайте жалобу в
@@ -263,6 +261,39 @@
     </div>
 </div>
 
+<script>
+    $(".spoiler-trigger").click(function() {
+        $(this).parent().next().collapse('toggle');
+    });
+</script> <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function (d, w, c) {
+   	(w[c] = w[c] || []).push(function() {
+   		try {
+   			w.yaCounter45325305 = new Ya.Metrika({
+   				id:45325305,
+   				clickmap:true,
+   				trackLinks:true,
+   				accurateTrackBounce:true
+   			});
+   		} catch(e) { }
+   	});
+   
+   	var n = d.getElementsByTagName("script")[0],
+   		s = d.createElement("script"),
+   		f = function () { n.parentNode.insertBefore(s, n); };
+   	s.type = "text/javascript";
+   	s.async = true;
+   	s.src = "https://mc.yandex.ru/metrika/watch.js";
+   
+   	if (w.opera == "[object Opera]") {
+   		d.addEventListener("DOMContentLoaded", f, false);
+   	} else { f(); }
+   })(document, window, "yandex_metrika_callbacks");
+   $.post('/engine/ajax.php?type=donaters', {}, function(data) {
+          $('#last_donaters').html(data);
+      });	
+</script>
 <noscript>
    &lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/45325305" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;
 </noscript>
