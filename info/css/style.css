@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+    background: url(../img/bg.png);
+}
+
+.content {
+  margin-top: 50px;
+}
+.content form {
+  margin-top: 20px;
+}
+footer,
+.footer {
+  height: 100px;
+}
+
+.embed-responsive {
+   max-height:50px;
+}
+
+.line {
+    border: none;
+    background-color: gray;
+    color: gray;
+    height: 2px;
+	margin-top: 15px;
+}
+
+.lin {
+    width: 600px;
+    border: none;
+    background-color: black;
+    color: gray;
+    height: 2px;
+    margin-top: 15px;
+}
+
+.modal-body .alert-info {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.thumbnail:hover {
+	background-color: rgba(255, 242, 0, 0.3);
+}

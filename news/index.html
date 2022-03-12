@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>MineBars - Новости</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="../js/script.js"></script>
+	  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://bootswatch.com/spacelab/bootstrap.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+  <style>
+   body {
+        background: url(img/bg1.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+   }
+  </style>
+      <div class="navbar navbar-default navbar-static-top">
+         <div class="container">
+            <div class="navbar-header">
+               <a href="../index.html" class="navbar-brand"><span class="fa fa-diamond"></span> MineBars</a>
+               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+               <ul class="nav navbar-nav navbar-left">
+                  <li><a href="https://vk.com/MineBars" target="_blank">Мы ВКонтакте</a>
+                  </li>
+                  <li><a href="../rules.html" target="_self">Правила</a>
+                  </li>
+                  <li><a href="index.html#" data-toggle="modal" data-target="#basicModal">Контакты</a>
+                  </li>
+                  <li><a href="../info.html" target="_self">Инфо о донате</a>
+                  </li>
+                  <li><a href="../how.html" target="_self">Как купить?</a>
+                  </li>
+	              <li><a href="https://vk.me/MineBars">Тех.поддержка</a></li>
+				  </li>
+        <li class="dropdown">
+          <a id="drop1" href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+            Другое
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+			<li><a href="../guard.html">Безопасность</a></li>
+			<li><a href="../faq.html">FAQ</a></li>
+			<li><a></a></li>
+            <li class="divider"></li>
+            <li><a href="../console.html">Консоль</a></li>
+          </ul>
+        </li>
+               <ul class="nav navbar-nav navbar-right">
+                  <a href="../index.html" class="btn btn-warning navbar-btn navbar-right hidden-sm hidden-xs" onclick="prompt('Скопируйте наш IP адрес и вставьте в ваш клиент:','MBars.ru'); return false;">
+                  IP: MBars.ru
+                  </a>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+	  
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content bg-info">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="myModalLabel">Контакты</h4>
+            </div>
+            <div class="modal-body">
+                <p> <a href="https://vk.me/MineBars" target="_blank">● Тех.поддержка</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+<center>
+<script type="text/javascript" src="http://vk.com/js/api/openapi.js?152"></script>
+
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 4, no_cover: 1, width: "800", height: "850"}, 41994665);
+</script>
+</center>
+
+
+
+
+
+
+</body>
+</html>
